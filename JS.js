@@ -41,10 +41,26 @@ let usu = prompt("Digite o seu nome de usuário.")
 let sen = prompt("Digite a sua senha.")
 
 if (usuario != usu || senha != sen){
-    document.write("Falha na autenticação, alguma das credênciais está incorreta.")
+    document.write("Falha na autenticação, alguma das credênciais está incorreta.<br>")
 } else {
-    document.write("O login foi realizado com sucesso.<br>Seja bem-vindo ao sistema.")
+    document.write("O login foi realizado com sucesso.<br>Seja bem-vindo ao sistema.<br>")
 }
+//6 -Vamoscriar um programa que calculea média de 7notas e exibauma mensagem indicando se o aluno foi aprovado ou reprovado. Considere que a média mínima para aprovação é 6.Exemplifique e demonstre a saída! (5 Pontos)
+let nota1 = parseFloat(prompt("Qual foi sua primeira nota:"))
+let nota2 = parseFloat(prompt("Qual foi sua segunda nota:"))
+let nota3 = parseFloat(prompt("Qual foi sua terceira nota:"))
+let nota4 = parseFloat(prompt("Qual foi sua quarta nota:"))
+let nota5 = parseFloat(prompt("Qual foi sua quinta nota:"))
+let nota6 = parseFloat(prompt("Qual foi sua sexta nota:"))
+let nota7 = parseFloat(prompt("Qual foi sua setima nota:"))
+
+let media = (nota1+nota2+nota3+nota4+nota5+nota6+nota7) / 7
+if(media>=6){
+    document.write("Aprovado. Sua media foi " +media.toFixed(1))
+}else{
+    document.write("Reprovado. Sua media foi " +media.toFixed(1))
+}
+
 
 
 
