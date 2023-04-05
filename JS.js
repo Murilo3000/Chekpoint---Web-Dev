@@ -106,3 +106,8 @@ document.write(
 //8 -Crie  um  programa  em  Javascript  que troque  a  palavra  lugar  por  mundo  da frase O  LUGAR  VIRA TECNOLOGIA e apresente na tela. (20 Pontos)
 let txt = "<br>O lugar vira tecnologia";
 document.write(txt.replace("lugar", "mundo"));
+
+//9 -Crie um programa que declare a variável como String depois converta para float e em seguida apresente apenas dois numeros depois da virgula
+let numString = "134.5689"
+let numFloat = parseFloat(numString)
+document.write(numFloat.toFixed(2))
